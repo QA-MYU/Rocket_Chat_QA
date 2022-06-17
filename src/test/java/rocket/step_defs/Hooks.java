@@ -16,12 +16,12 @@ public class Hooks {
         Driver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
-    @After
-    public void destroy(Scenario scenario){
-        if (scenario.isFailed()){
-            final byte[] screenshot=((TakesScreenshot)Driver.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot,"image/png","screenshot");
-        }
-        Driver.closeDriver();
-    }
+//    @After
+//    public void destroy(Scenario scenario){
+//        if (scenario.isFailed()){
+//            final byte[] screenshot=((TakesScreenshot)Driver.get()).getScreenshotAs(OutputType.BYTES);
+//            scenario.attach(screenshot,"image/png","screenshot");
+//        }
+//        Driver.closeDriver();
+//    }
 }

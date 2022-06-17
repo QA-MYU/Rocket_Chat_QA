@@ -47,8 +47,6 @@ public class MyStepdefs {
 
         new Select(homePage.account);
         select.getFirstSelectedOption().click();
-
-        homePage.status_pendente.click();
         homePage.save.click();
     }
 }
